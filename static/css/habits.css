@@ -1,0 +1,140 @@
+.habits {
+    width: 100%;
+}
+
+.habits > h3 {
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 5px;
+}
+.habits h2 {
+    padding-left: 5%;
+    text-transform: uppercase;
+    color: slateblue;
+    margin-bottom: 20px;
+}
+
+.habits__face--face1 h3 {
+    color: white;
+}
+.habits__container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    justify-items: center;
+    gap: 90px;
+}
+
+.habits__face {
+    min-height: 200px;
+    transition: 0.5s;
+}
+
+.habits__face--face1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100px);
+    background-color: #142270;
+    z-index: 1;
+    position: relative;
+}
+
+.habits__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.habits__content img {
+    max-width: 100px;
+}
+
+.habits__content h3 {
+    text-align: center;
+    margin-left: 5px;
+}
+
+.habits__face--face2 {
+    background-color: snow;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+
+}
+
+.habits__card:hover .habits__face--face1 {
+    transform: translateY(0);
+    background-color: #e91e63;
+    color: snow;
+}
+
+.habits__card:hover .habits__face--face2 {
+    transform: translateY(0);
+
+}
+
+.habits__disclaimer {
+    text-decoration-color: black;
+    font-size: 12px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.symptoms_face {
+    min-height: 200px;
+}
+
+.symptoms_face--face1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #142270;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    padding: 20px 80px;
+    border-radius: 15px;
+}
+
+.symptoms_face--face1 h3 {
+    color: white;
+}
+
+.advices {
+    position: relative;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-flow: dense;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-gap: 10px;
+}
+
+.advices__box {
+    color: #fff;
+    background-color: #142270;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.advices__box:hover {
+    background-color: #e91e63;
+}
+
+.advices__content img {
+    margin-bottom: 10px;
+    max-width: 100px;
+}

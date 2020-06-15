@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Covid 19 Tracker | News</title>
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="static/css/ham-menu.css">
+  <link rel="stylesheet" type="text/css" href="static/css/habits.css">
+  <link rel="stylesheet" type="text/css" href="static/css/main.css">
+  <style type="text/css">
+    .boxo {
+  padding: 20px;
+  box-sizing: border-box;
+  
+  border-color: black;
+  border-radius: 5px;
+  display: flex;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+.boxo .imgBxo {
+  width: 250px;
+  flex:0 0 150px;
+}
+
+.boxo .imgBxo img {
+  max-width: 100%;
+  height: 100px;
+  width: 350px;
+}
+
+.boxo .contento {
+  padding-left: 20px;
+  width: 400px;
+}
+
+.boxo .contento h2 {
+  margin: 0;
+  padding-left: 0;
+  color: #ff005c;
+}
+
+.boxo .contento h2 {
+  color: #640064;
+}
+.boxo .contento h2:hover {
+  text-decoration: underline;
+}
+
+
+  </style>  
+
+</head>
+<body>
+	<!-- Navigation Start -->	
+      <nav id="hamnav" class="zone pop bluee sticky">
+        <ul class="main-nav">
+          <div class="nav-brand1">
+            <li><a href="">COVID-19</a></li>
+          </div>
+        <!-- [THE HAMBURGER] -->
+        <label for="hamburger" style="">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+        <!-- [MENU ITEMS] -->
+        
+          <div id="hamitems" class="navbar-right">
+            <li><a href="index.html">Tracker</a></li>
+            <li><a href="symptoms.html">Symptoms</a></li>
+            <li><a href="prevention.html">Prevention</a></li>
+            <li><a href="habits.html">Habits</a></li>
+            <li><a href="news.html">News Trend</a></li>
+
+          </div>
+
+        </ul>
+      </nav>
+  <!-- Navigation End -->
+<br>
+<br>
+<br>
+<br>
+  <div class="header">
+    <h1>COVID-19 Tracker</h1>
+  </div>
+<section class="habits">
+        <h2>Latest News</h2>
+        <hr>
+
+    {% for eti in range(10) %}
+    <div class="boxo">
+      <div class="imgBxo">
+        <img src="{{ news_image[eti] }}">
+      </div>
+      <div class="contento">
+        <a href="{{ news_link[eti] }}" style="color: #640064; text-decoration: underline"><h3>{{ news_heading[eti] }}</h3></a>
+        <h5 style="color: #008000">{{ subtitle1[eti] }} {{ subtitle2[eti] }}</h5>
+        <p>{{ news_text[eti] }}</p>
+      </div>
+    </div>
+    {% endfor %}
+</section>
+
+<footer class="bluee">
+        <div class="footer__quote">
+            <p>
+                Because even though the world is on pause,
+                you don't have to be
+            </p>
+            
+            <div class="footer__credits">
+                Made by <a href="https://github.com/krishashah911" target="_blank">Krisha Shah</a>
+                <p class="footer__copy">Visit <a href="https://github.com/krishashah911"><u>Github</u></a></p>
+            </div>
+        </div>
+
+        <div class="footer__form">
+            <form action="submit_form" method="post"><input type="hidden" name="form-name" value="form 1">
+
+                <label>
+                    Get more advices and tips to make the best out of this situation
+                </label>
+                <input name="name" type="text" required="" placeholder="Name">
+                <input name="email" type="email" required="" placeholder="Your Email">
+                <input name="msg" type="text" required="" placeholder="Message">
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+  </footer>
+
+</body>
+</html>
