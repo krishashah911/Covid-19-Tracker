@@ -152,7 +152,7 @@ def symptoms():
 
 @app.route('/news.html')
 def news():
-    return render_template('./news.html',news_image=news_image, news_heading=news_heading, news_text=news_text, news_link=news_link, subtitle1=subtitle1, subtitle2=subtitle2)
+    return render_template('./news.html')
 
 def write_to_file(data):
 	with open('database.txt', mode='a') as database:
