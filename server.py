@@ -103,26 +103,26 @@ for l in range(len(b)):
         l=l+1;
 
     
-news_link = []
-for k in range(len(b)):
-    link_a = b[k].find('a')
-    news_link.append(link_a['href'])
+# news_link = []
+# for k in range(len(b)):
+#     link_a = b[k].find('a')
+#     news_link.append(link_a['href'])
 
-news_heading = []
-for i in range(len(b)):
-    news_heading.append(b[i].find(class_='fz-16 lh-20').text)
+# news_heading = []
+# for i in range(len(b)):
+#     news_heading.append(b[i].find(class_='fz-16 lh-20').text)
 
-news_text = []
-for j in range(len(b)):
-    news_text.append(b[j].find('p').text) 
+# news_text = []
+# for j in range(len(b)):
+#     news_text.append(b[j].find('p').text) 
 
-subtitle1 = []
-for o in range(len(b)):
-    subtitle1.append(b[o].find('span', class_="mr-5 cite-co").text)
+# subtitle1 = []
+# for o in range(len(b)):
+#     subtitle1.append(b[o].find('span', class_="mr-5 cite-co").text)
 
-subtitle2 = []
-for p in range(len(b)):
-    subtitle2.append(b[p].find('span', class_="fc-2nd mr-8").text)
+# subtitle2 = []
+# for p in range(len(b)):
+#     subtitle2.append(b[p].find('span', class_="fc-2nd mr-8").text)
 
 @app.route('/')
 def index():
