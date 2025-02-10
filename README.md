@@ -15,6 +15,3 @@ This data has been manipulated using pure analysis and machine learning with an 
 
 ## View my Article: https://www.linkedin.com/posts/krisha-shah-0974bb18b_covid-19-being-a-pandemic-situation-worldwide-activity-6679055352660598784-gUtD
 Do like and share with your family and friends☺️🤗 
-
-## Visit website: https://ml-covid-19-tracker.herokuapp.com/
-PS: View the website on a desktop for better experience 
