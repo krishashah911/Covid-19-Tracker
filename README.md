@@ -13,5 +13,5 @@ It took me around 15-20 days to build the entire app from scratch. Lockdown kind
 It's a full fledged FLASK APP supported by Python language and various libraries in it. The dataset is imported from verified and authenticated resources including WHO. 
 This data has been manipulated using pure analysis and machine learning with an accuracy of 97%.
 
-## View my Article: https://www.linkedin.com/posts/krisha-shah-0974bb18b_covid-19-being-a-pandemic-situation-worldwide-activity-6679055352660598784-gUtD
+## View my Article: https://www.linkedin.com/feed/update/urn:li:activity:6679055352660598784/
 Do like and share with your family and friends☺️🤗 
